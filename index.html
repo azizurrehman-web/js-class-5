@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+
+    <form onsubmit="getweather(); return false;">
+      <label for="city">Enter Your City:</label>
+      <input type="text" id="city" name="city" placeholder="Enter Your City" />
+
+      <button type="submit" onclick="getweather()">Get Weather</button>
+      <br />
+      <br />
+      <div id="result"></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
